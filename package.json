@@ -1,0 +1,29 @@
+{
+  "name": "nice-react",
+  "version": "1.0.0",
+  "description": "a react cli toolkit",
+  "main": "index.js",
+  "bin": {
+    "nice-react": "bin/index"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinghoo5201/nice-react.git"
+  },
+  "keywords": [],
+  "author": "kinghoo5201",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinghoo5201/nice-react/issues"
+  },
+  "homepage": "https://github.com/kinghoo5201/nice-react#readme"
+}
