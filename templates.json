@@ -3,6 +3,10 @@
     "react-template": {
       "url": "https://github.com/kinghoo5201/react-template.git",
       "branch": "master"
+    },
+    "ts-react-template": {
+      "url": "https://github.com/kinghoo5201/ts-react-template.git",
+      "branch": "master"
     }
   }
 }

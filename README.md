@@ -1,4 +1,5 @@
 # nice-react
+
 a react cli toolkit
 
 ## 安装说明
@@ -6,13 +7,15 @@ a react cli toolkit
 由于有点坑，全局安装找不到命令
 
 1.
+
 ```shell
-npm i nice-react
+npm i nice-react -g
 ```
 
 2.
+
 ```shell
-npx nice-react init
+nice-react init
 ```
 
 3.input templateName:react-template
@@ -20,6 +23,7 @@ npx nice-react init
 4.input your projectName:xxx
 
 5.
+
 ```shell
 cd xxx && npm i && npm start
 ```
