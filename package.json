@@ -1,6 +1,6 @@
 {
   "name": "nice-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a react cli toolkit",
   "main": "index.js",
   "bin": {
@@ -19,7 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/kinghoo5201/nice-react.git"
   },
-  "keywords": [],
+  "keywords": [
+    "脚手架"
+  ],
   "author": "kinghoo5201",
   "license": "ISC",
   "bugs": {
