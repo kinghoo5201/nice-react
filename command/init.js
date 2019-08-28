@@ -1,7 +1,7 @@
 'use strict';
 const exec = require('child_process').exec;
-const execSync = require('child_process').execSync;
 const co = require('co');
+const sysType = require('os').type();
 const prompt = require('co-prompt');
 const config = require('../templates');
 const chalk = require('chalk');
@@ -30,9 +30,20 @@ module.exports = () => {
         process.exit();
       }
       console.log(chalk.green('\n √ Generation completed!'));
-      execSync(`\n cd ${projectName} && ( rm -rf .git || rd /s/q .git ) \n`);
-      console.log(`\n cd ${projectName} && npm install \n`);
-      process.exit();
+      let execStr;
+      if (sysType === 'Windows_NT') {
+        execStr = `cd ${projectName} && rd /s/q .git`;
+      } else {
+        execStr = `cd ${projectName} &&  rm -rf .git`;
+      }
+      exec(execStr, err => {
+        if (err) {
+          console.log(err);
+          process.exit();
+        }
+        console.log(`\n cd ${projectName} && npm install \n`);
+        process.exit();
+      });
     });
   });
 };

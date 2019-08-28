@@ -1,6 +1,6 @@
 {
   "name": "nice-react",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "a react cli toolkit",
   "main": "index.js",
   "bin": {
@@ -13,7 +13,8 @@
     "chalk": "^1.1.3",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "os": "^0.1.1"
   },
   "repository": {
     "type": "git",
