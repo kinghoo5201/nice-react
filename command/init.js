@@ -1,5 +1,6 @@
 'use strict';
 const exec = require('child_process').exec;
+const execSync = require('child_process').execSync;
 const co = require('co');
 const prompt = require('co-prompt');
 const config = require('../templates');
@@ -29,8 +30,9 @@ module.exports = () => {
         process.exit();
       }
       console.log(chalk.green('\n √ Generation completed!'));
+      execSync(`\n cd ${projectName} && git remote remove origin \n`);
       console.log(
-        `\n cd ${projectName} && del(or rm -rf ) .git && npm install \n`
+        `\n cd ${projectName} && npm install && git remote add origin [your origin]\n`
       );
       process.exit();
     });

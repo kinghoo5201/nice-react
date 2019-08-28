@@ -1,6 +1,6 @@
 {
   "name": "nice-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a react cli toolkit",
   "main": "index.js",
   "bin": {
