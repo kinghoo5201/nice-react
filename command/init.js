@@ -30,10 +30,8 @@ module.exports = () => {
         process.exit();
       }
       console.log(chalk.green('\n √ Generation completed!'));
-      execSync(`\n cd ${projectName} && git remote remove origin \n`);
-      console.log(
-        `\n cd ${projectName} && npm install && git remote add origin [your origin]\n`
-      );
+      execSync(`\n cd ${projectName} && ( rm -rf .git || rd /s/q .git ) \n`);
+      console.log(`\n cd ${projectName} && npm install \n`);
       process.exit();
     });
   });
