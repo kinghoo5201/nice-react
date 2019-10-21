@@ -4,7 +4,6 @@ a react cli toolkit
 
 ## 安装说明
 
-由于有点坑，全局安装找不到命令
 
 1.
 
